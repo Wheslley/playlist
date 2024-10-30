@@ -60,3 +60,105 @@ java.lang.IllegalStateException: No Docker Compose file found in directory '/Use
 2024-10-30T02:31:46.306-03:00  INFO 2152 --- [playlist] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2024-10-30T02:33:52.795-03:00  INFO 2152 --- [playlist] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 20 class path changes (0 additions, 20 deletions, 0 modifications)
 2024-10-30T02:33:52.808-03:00  INFO 2152 --- [playlist] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-30T02:36:35.870-03:00  INFO 2152 --- [playlist] [restartedMain] c.einstein.playlist.PlaylistApplication  : Starting PlaylistApplication using Java 23.0.1 with PID 2152 (/Users/wheslley-macbook-pro/projects/playlist/target/classes started by wheslley-macbook-pro in /Users/wheslley-macbook-pro/projects/playlist)
+2024-10-30T02:36:35.870-03:00  INFO 2152 --- [playlist] [restartedMain] c.einstein.playlist.PlaylistApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-10-30T02:36:35.968-03:00  INFO 2152 --- [playlist] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-30T02:36:35.973-03:00  INFO 2152 --- [playlist] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2024-10-30T02:36:36.229-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-30T02:36:36.231-03:00  INFO 2152 --- [playlist] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-30T02:36:36.231-03:00  INFO 2152 --- [playlist] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-10-30T02:36:36.239-03:00  INFO 2152 --- [playlist] [restartedMain] o.a.c.c.C.[.[localhost].[/playlist-api]  : Initializing Spring embedded WebApplicationContext
+2024-10-30T02:36:36.240-03:00  INFO 2152 --- [playlist] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 369 ms
+2024-10-30T02:36:36.330-03:00  INFO 2152 --- [playlist] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-30T02:36:36.332-03:00  INFO 2152 --- [playlist] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-30T02:36:36.342-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-30T02:36:36.371-03:00  INFO 2152 --- [playlist] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-30T02:36:36.373-03:00  INFO 2152 --- [playlist] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-30T02:36:36.380-03:00  WARN 2152 --- [playlist] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'playlistController' defined in file [/Users/wheslley-macbook-pro/projects/playlist/target/classes/com/einstein/playlist/controller/PlaylistController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.einstein.playlist.service.PlayListService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-10-30T02:36:36.380-03:00  INFO 2152 --- [playlist] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-30T02:36:36.381-03:00  INFO 2152 --- [playlist] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-10-30T02:36:36.394-03:00  INFO 2152 --- [playlist] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-30T02:36:36.400-03:00 ERROR 2152 --- [playlist] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.einstein.playlist.controller.PlaylistController required a bean of type 'com.einstein.playlist.service.PlayListService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.einstein.playlist.service.PlayListService' in your configuration.
+
+2024-10-30T02:36:37.858-03:00  INFO 2152 --- [playlist] [restartedMain] c.einstein.playlist.PlaylistApplication  : Starting PlaylistApplication using Java 23.0.1 with PID 2152 (/Users/wheslley-macbook-pro/projects/playlist/target/classes started by wheslley-macbook-pro in /Users/wheslley-macbook-pro/projects/playlist)
+2024-10-30T02:36:37.858-03:00  INFO 2152 --- [playlist] [restartedMain] c.einstein.playlist.PlaylistApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-10-30T02:36:37.940-03:00  INFO 2152 --- [playlist] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-30T02:36:37.942-03:00  INFO 2152 --- [playlist] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2024-10-30T02:36:38.062-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-30T02:36:38.063-03:00  INFO 2152 --- [playlist] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-30T02:36:38.063-03:00  INFO 2152 --- [playlist] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-10-30T02:36:38.068-03:00  INFO 2152 --- [playlist] [restartedMain] o.a.c.c.C.[.[localhost].[/playlist-api]  : Initializing Spring embedded WebApplicationContext
+2024-10-30T02:36:38.068-03:00  INFO 2152 --- [playlist] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 208 ms
+2024-10-30T02:36:38.105-03:00  INFO 2152 --- [playlist] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-30T02:36:38.107-03:00  INFO 2152 --- [playlist] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-30T02:36:38.113-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-30T02:36:38.127-03:00  INFO 2152 --- [playlist] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-30T02:36:38.131-03:00  INFO 2152 --- [playlist] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-30T02:36:38.219-03:00  WARN 2152 --- [playlist] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-30T02:36:38.241-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-10-30T02:36:38.434-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-10-30T02:36:38.437-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-30T02:36:38.455-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/playlist-api'
+2024-10-30T02:36:38.459-03:00  INFO 2152 --- [playlist] [restartedMain] c.einstein.playlist.PlaylistApplication  : Started PlaylistApplication in 0.628 seconds (process running for 295.715)
+2024-10-30T02:36:38.460-03:00  INFO 2152 --- [playlist] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-10-30T02:38:26.011-03:00  INFO 2152 --- [playlist] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 20 class path changes (0 additions, 20 deletions, 0 modifications)
+2024-10-30T02:38:26.022-03:00  INFO 2152 --- [playlist] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-30T02:38:42.838-03:00  INFO 2152 --- [playlist] [restartedMain] c.einstein.playlist.PlaylistApplication  : Starting PlaylistApplication using Java 23.0.1 with PID 2152 (/Users/wheslley-macbook-pro/projects/playlist/target/classes started by wheslley-macbook-pro in /Users/wheslley-macbook-pro/projects/playlist)
+2024-10-30T02:38:42.839-03:00  INFO 2152 --- [playlist] [restartedMain] c.einstein.playlist.PlaylistApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-10-30T02:38:42.908-03:00  INFO 2152 --- [playlist] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-30T02:38:42.909-03:00  INFO 2152 --- [playlist] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2024-10-30T02:38:43.009-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-30T02:38:43.009-03:00  INFO 2152 --- [playlist] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-30T02:38:43.009-03:00  INFO 2152 --- [playlist] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-10-30T02:38:43.014-03:00  INFO 2152 --- [playlist] [restartedMain] o.a.c.c.C.[.[localhost].[/playlist-api]  : Initializing Spring embedded WebApplicationContext
+2024-10-30T02:38:43.014-03:00  INFO 2152 --- [playlist] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 175 ms
+2024-10-30T02:38:43.053-03:00  INFO 2152 --- [playlist] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-30T02:38:43.054-03:00  INFO 2152 --- [playlist] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-30T02:38:43.060-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-30T02:38:43.077-03:00  INFO 2152 --- [playlist] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-30T02:38:43.079-03:00  INFO 2152 --- [playlist] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-30T02:38:43.160-03:00  WARN 2152 --- [playlist] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-30T02:38:43.181-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-10-30T02:38:43.347-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-10-30T02:38:43.350-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-30T02:38:43.366-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/playlist-api'
+2024-10-30T02:38:43.370-03:00  INFO 2152 --- [playlist] [restartedMain] c.einstein.playlist.PlaylistApplication  : Started PlaylistApplication in 0.54 seconds (process running for 420.628)
+2024-10-30T02:38:43.371-03:00  INFO 2152 --- [playlist] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-10-30T02:39:32.195-03:00  INFO 2152 --- [playlist] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-10-30T02:39:32.204-03:00  INFO 2152 --- [playlist] [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-30T02:39:32.258-03:00  INFO 2152 --- [playlist] [restartedMain] c.einstein.playlist.PlaylistApplication  : Starting PlaylistApplication using Java 23.0.1 with PID 2152 (/Users/wheslley-macbook-pro/projects/playlist/target/classes started by wheslley-macbook-pro in /Users/wheslley-macbook-pro/projects/playlist)
+2024-10-30T02:39:32.259-03:00  INFO 2152 --- [playlist] [restartedMain] c.einstein.playlist.PlaylistApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-10-30T02:39:32.325-03:00  INFO 2152 --- [playlist] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-30T02:39:32.327-03:00  INFO 2152 --- [playlist] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2024-10-30T02:39:32.429-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-30T02:39:32.429-03:00  INFO 2152 --- [playlist] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-30T02:39:32.429-03:00  INFO 2152 --- [playlist] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-10-30T02:39:32.434-03:00  INFO 2152 --- [playlist] [restartedMain] o.a.c.c.C.[.[localhost].[/playlist-api]  : Initializing Spring embedded WebApplicationContext
+2024-10-30T02:39:32.435-03:00  INFO 2152 --- [playlist] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 176 ms
+2024-10-30T02:39:32.473-03:00  INFO 2152 --- [playlist] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-30T02:39:32.475-03:00  INFO 2152 --- [playlist] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-30T02:39:32.480-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-30T02:39:32.491-03:00  INFO 2152 --- [playlist] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-30T02:39:32.493-03:00  INFO 2152 --- [playlist] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-30T02:39:32.565-03:00  WARN 2152 --- [playlist] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-30T02:39:32.587-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-10-30T02:39:32.736-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-10-30T02:39:32.738-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-10-30T02:39:32.756-03:00  INFO 2152 --- [playlist] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/playlist-api'
+2024-10-30T02:39:32.761-03:00  INFO 2152 --- [playlist] [restartedMain] c.einstein.playlist.PlaylistApplication  : Started PlaylistApplication in 0.512 seconds (process running for 470.019)
+2024-10-30T02:39:32.761-03:00  INFO 2152 --- [playlist] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
