@@ -2,6 +2,7 @@ package com.einstein.playlist.controller;
 
 import com.einstein.playlist.model.dto.PlayListDto;
 import com.einstein.playlist.model.request.PlayListRequest;
+import com.einstein.playlist.model.response.PlayListDeleteResponse;
 import com.einstein.playlist.model.response.PlayListListResponse;
 import com.einstein.playlist.service.PlayListService;
 import org.springframework.http.HttpStatus;
@@ -53,8 +54,11 @@ public final class PlaylistController {
 
     @DeleteMapping("/playlist/{id}")
     public ResponseEntity<PlayListDto> deletePlaylist(@PathVariable("id") Long id) {
-        this.playListService.deletePlayList(id);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        if(this.playListService.deletePlayList(id).getDeletedPlaylistId()==0L){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
     }
 
 }

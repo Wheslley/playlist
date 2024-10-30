@@ -24,7 +24,6 @@ public final class PlayListConverter {
             return null;
         } else {
             return PlaylistEntity.builder()
-                    .id(request.getId())
                     .name(request.getName())
                     .build();
         }

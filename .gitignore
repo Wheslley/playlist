@@ -1,5 +1,7 @@
 README.md
 target/
+logs/
+Chinook_Sqlite.sqlite
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
