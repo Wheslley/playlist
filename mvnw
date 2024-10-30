@@ -130,7 +130,7 @@ maven-mvnd-*bin.*)
   distributionUrl="${distributionUrl%-bin.*}-$distributionPlatform.zip"
   ;;
 maven-mvnd-*) MVN_CMD=mvnd.sh _MVNW_REPO_PATTERN=/maven/mvnd/ ;;
-*) MVN_CMD="mvn${0##*/mvnw}" _MVNW_REPO_PATTERN=/org/apache/maven/ ;;
+*) MVN_CMD="mvn${0##*/wwwmvnw}" _MVNW_REPO_PATTERN=/org/apache/maven/ ;;
 esac
 
 # apply MVNW_REPOURL and calculate MAVEN_HOME
