@@ -9,6 +9,7 @@ import java.io.Serializable;
 @Builder
 public final class PlayListRequest implements Serializable {
 
+    private Long id;
     private String name;
 
 }

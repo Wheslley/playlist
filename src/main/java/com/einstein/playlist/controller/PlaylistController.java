@@ -5,6 +5,7 @@ import com.einstein.playlist.model.request.PlayListRequest;
 import com.einstein.playlist.model.response.PlayListDeleteResponse;
 import com.einstein.playlist.model.response.PlayListListResponse;
 import com.einstein.playlist.service.PlayListService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.CollectionUtils;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
+@Slf4j
 @RestController
 public final class PlaylistController {
 
@@ -34,6 +36,7 @@ public final class PlaylistController {
     @GetMapping("/playlists")
     public ResponseEntity<PlayListListResponse> playlist() {
         PlayListListResponse response = this.playListService.getAllPlayLists();
+        log.info(String.valueOf(response.getPlaylists().size()));
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
